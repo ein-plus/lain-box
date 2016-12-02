@@ -10,6 +10,7 @@ Environment=GOTRACEBACK=crash DOCKER_CERT_PATH=/etc/docker
 ExecStart=/usr/bin/docker daemon \
           --insecure-registry registry.lain \
           --insecure-registry registry.lain.local \
+          --insecure-registry registry.lain.ein.plus \
           --selinux-enabled \
           --host unix:///var/run/docker.sock
 
