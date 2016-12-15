@@ -33,6 +33,3 @@ curl https://bootstrap.pypa.io/get-pip.py | python
 pip install git+https://github.com/laincloud/entry.git
 pip install git+https://github.com/laincloud/lain-sdk.git
 pip install git+https://github.com/laincloud/lain-cli.git
-
-mv /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth1
-sed -e "s/DEVICE=eth0/DEVICE=eth1/g" /etc/sysconfig/network-scripts/ifcfg-eth1

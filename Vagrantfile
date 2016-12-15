@@ -20,5 +20,9 @@ Vagrant.configure(2) do |config|
     config.vm.synced_folder File.expand_path(path), "/apps/#{name}"
   end
 
+  config.vm.provision "shell",
+    run: "always",
+    inline: "ifconfig eth1 " + cfg["ip"] + " netmask 255.255.255.0 up"
+
 end
 
